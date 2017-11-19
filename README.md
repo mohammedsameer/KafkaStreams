@@ -27,14 +27,11 @@ b) Start Producer and Consumer
 ./bin/kafka-console-producer.sh --broker-list 10.0.0.243:9092 --topic input-test
 ./bin/kafka-console-consumer.sh --bootstrap-server 10.0.0.243:9092 --from-beginning --topic output-test
 ```
-Samples
+Sample
 
 Input:
-
 hello
-
 Output:
-
 hello
 
 ### 2. LinSplit
@@ -49,20 +46,14 @@ Start Producer and Consumer
 ./bin/kafka-console-producer.sh --broker-list 10.0.0.243:9092 --topic input-line
 ./bin/kafka-console-consumer.sh --bootstrap-server 10.0.0.243:9092 --from-beginning --topic output-line
 ```
-Samples:
+Sample
 
 Input:
-
 my name is sameer
-
 Output:
-
 my
-
 name
-
 is
-
 sameer
 
 ### 3. WordCount
@@ -77,13 +68,10 @@ Start Producer and Consumer
 ./bin/kafka-console-producer.sh --broker-list 10.0.0.243:9092 --topic input-wordcount
 ./bin/kafka-console-consumer.sh --bootstrap-server 10.0.0.243:9092 --from-beginning --topic output-wordcount --property print.key=true --property value.deserializer=org.apache.kafka.common.serialization.LongDeserializer
 ```
-Samples:
+Sample
+
 Input:
-
 hello hello sameer
-
 Output:
-
 hello   2
-
 sameer  1
